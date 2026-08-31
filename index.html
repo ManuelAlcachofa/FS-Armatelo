@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Armatelo — Arma tu PC a tu manera</title>
+  <meta name="description" content="Compará builds de PC ya armadas o ensamblá la tuya eligiendo precio, marca, almacenamiento y RAM." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav__row">
+      <a href="index.html" class="nav__brand">ARMA<span>TELO</span></a>
+      <ul class="nav__links">
+        <li><a href="#builds">Builds</a></li>
+        <li><a href="ensamble.html">Ensamblar</a></li>
+        <li><a href="ayuda.html">Ayuda</a></li>
+      </ul>
+      <a href="registro.html" class="nav__cta">Registrarme</a>
+      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- hero -->
+    <section class="hero">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <svg class="hero__traces" viewBox="0 0 1200 600" fill="none" aria-hidden="true" preserveAspectRatio="none">
+        <path d="M0 120 H260 V60 H520" stroke="#ff9142" stroke-width="1.5" />
+        <path d="M0 340 H160 V420 H460 V300 H900" stroke="#ff5714" stroke-width="1.5" />
+        <path d="M1200 80 H940 V180 H700" stroke="#ff9142" stroke-width="1.5" />
+        <path d="M1200 520 H860 V440 H600 V520 H300" stroke="#ff5714" stroke-width="1.5" />
+        <circle cx="260" cy="120" r="4" fill="#ff9142" />
+        <circle cx="900" cy="300" r="4" fill="#ff5714" />
+        <circle cx="700" cy="180" r="4" fill="#ff9142" />
+        <circle cx="300" cy="520" r="4" fill="#ff5714" />
+      </svg>
+
+      <div class="container">
+        <p class="hero__eyebrow">Arma tu setup, sin vueltas</p>
+        <h1 class="hero__title">ARMA<em>TELO</em></h1>
+        <p class="hero__subtitle">
+          Mira builds ya pensadas para distintos usos o armate la tuya
+          eligiendo precio, marca, almacenamiento, RAM y demas parametros.
+        </p>
+        <div class="hero__actions">
+          <a href="#builds" class="btn btn--primary">Ver builds</a>
+          <a href="ensamble.html" class="btn btn--ghost">Empezar a armar</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- pre armadas -->
+    <section class="section" id="builds">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="section__eyebrow">Catálogo</p>
+            <h2 class="section__title">Builds que te pueden tincar</h2>
+            <p class="section__desc">Combinaciones armadas y probadas para distintos presupuestos y usos.</p>
+          </div>
+        </div>
+
+        <div class="builds">
+          <article class="build-card">
+            <span class="build-card__tag">Entrada gamer</span>
+            <h3 class="build-card__name">Modelo Piola</h3>
+            <ul class="build-card__specs">
+              <li>CPU: <span>Ryzen 5 5600</span></li>
+              <li>GPU: <span>RTX 4060</span></li>
+              <li>RAM: <span>16 GB</span></li>
+              <li>Almacenamiento: <span>1 TB SSD Nvme</span></li>
+            </ul>
+            <div class="build-card__footer">
+              <span class="build-card__price">$780.000</span>
+              <a href="#" class="build-card__link">Ver detalle</a>
+            </div>
+          </article>
+
+          <article class="build-card">
+            <span class="build-card__tag">Streaming</span>
+            <h3 class="build-card__name">Modelo Stream</h3>
+            <ul class="build-card__specs">
+              <li>CPU: <span>Ryzen 7 7700x</span></li>
+              <li>GPU: <span>RTX 4070</span></li>
+              <li>RAM: <span>32 GB</span></li>
+              <li>Almacenamiento: <span>1 TB SSD Nvme</span></li>
+            </ul>
+            <div class="build-card__footer">
+              <span class="build-card__price">$1.280.000</span>
+              <a href="#" class="build-card__link">Ver detalle</a>
+            </div>
+          </article>
+
+          <article class="build-card">
+            <span class="build-card__tag">Workstation</span>
+            <h3 class="build-card__name">Modelo Teni Lukas</h3>
+            <ul class="build-card__specs">
+              <li>CPU: <span>Ryzen 9 7950X</span></li>
+              <li>GPU: <span>RTX 5080</span></li>
+              <li>RAM: <span>64 GB</span></li>
+              <li>Almacenamiento: <span>4 TB SSD Nvme</span></li>
+            </ul>
+            <div class="build-card__footer">
+              <span class="build-card__price">$2.850.000</span>
+              <a href="#" class="build-card__link">Ver detalle</a>
+            </div>
+          </article>
+
+          <article class="build-card">
+            <span class="build-card__tag">Oficina silenciosa</span>
+            <h3 class="build-card__name">Modelo Pato</h3>
+            <ul class="build-card__specs">
+              <li>CPU: <span>Ryzen 5 5500</span></li>
+              <li>GPU: <span>Integrada</span></li>
+              <li>RAM: <span>16 GB</span></li>
+              <li>Almacenamiento: <span>512 GB SSD Sata</span></li>
+            </ul>
+            <div class="build-card__footer">
+              <span class="build-card__price">$490.000</span>
+              <a href="#" class="build-card__link">Ver detalle</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- secciones ensamble y ayuda -->
+    <section class="section section--alt">
+      <div class="container panels">
+        <div class="panel panel--ensamble">
+          <p class="panel__icon">Zona de ensamble</p>
+          <h3 class="panel__title">Ensambla la tuya</h3>
+          <p class="panel__desc">
+            Elige los criterios y te mostramos las combinaciones que encajan
+            con lo que quieres.
+          </p>
+          <ul class="panel__criteria">
+            <li>Rango de precio</li>
+            <li>Marca preferida</li>
+            <li>Almacenamiento</li>
+            <li>Memoria RAM</li>
+          </ul>
+          <a href="ensamble.html" class="btn btn--primary">Ir a ensamblar</a>
+        </div>
+
+        <div class="panel">
+          <p class="panel__icon">Centro de ayuda</p>
+          <h3 class="panel__title">¿Primera vez armando una PC?</h3>
+          <p class="panel__desc">
+            Guias, glosario de piezas y errores comunes para que armes con
+            confianza, sea tu primera build o la número diez.
+          </p>
+          <a href="ayuda.html" class="btn btn--ghost">Ver guías</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__row" style="display:flex; align-items:center; justify-content:space-between; width:100%; flex-wrap:wrap; gap:12px;">
+      <span class="footer__brand">ARMATELO</span>
+      <span>&copy; <span data-year></span> Armatelo. Proyecto académico.</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
